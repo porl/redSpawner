@@ -1,0 +1,39 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "au.net.euclid",
+		"id": "red_spawner",
+		"version": "${version}",
+		"metadata": {
+			"name": "redSpawner",
+			"description": "Disable spawners with redstone.",
+			"contributors": {
+				"porl": "Owner"
+			},
+			"contact": {
+				"homepage": "https://euclid.net.au/",
+				"sources": "https://github.com/porl/redSpawner"
+			},
+			"icon": "assets/red_spawner/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "au.net.euclid.red_spawner.RedSpawner"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			}
+		]
+	},
+	"mixin": "red_spawner.mixins.json"
+}

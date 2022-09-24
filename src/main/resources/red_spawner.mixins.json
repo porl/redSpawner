@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "au.net.euclid.red_spawner.mixin",
+
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "client": [
+    "MobSpawnerLogicAccessor",
+    "MobSpawnerLogicMixin"
+  ],
+  "server": [
+    "MobSpawnerLogicAccessor",
+    "MobSpawnerLogicMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
